@@ -1,6 +1,6 @@
 // DipCatcher: a long-only swing bot for cbBTC on 1-minute on-chain bars.
 //
-// Strategy (mean reversion on intraday swings, tuned on the kit's dev window):
+// Strategy (mean reversion on intraday swings, tuned on a 24-hour development window):
 //   * Flat only: buy 100% of cash when the latest close is at least 2.00% below
 //     the highest close of the last 120 minutes AND the close is above the close
 //     5 minutes ago (a bounce has started -- never catch a still-falling knife).
@@ -24,9 +24,9 @@
 //
 // Determinism: every decision is a pure function of the bars received. No
 // clock, no environment, no randomness, no network, no files outside the repo.
-// Erasable TypeScript only, so it runs under the grader's `node /bot/main.ts`.
+// Erasable TypeScript only, so it runs as-is under `node main.ts`.
 
-import { runBars, type BarsState, type Batch, type BuyInput, type OrderInput, type SellInput } from './vendor/makefun-bars.ts';
+import { runBars, type BarsState, type Batch, type BuyInput, type OrderInput, type SellInput } from './vendor/bars.ts';
 
 const SYMBOL = 'CBBTC';
 
