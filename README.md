@@ -3,9 +3,9 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Strategy](https://img.shields.io/badge/strategy-dip%20buying-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Status](https://img.shields.io/badge/bounty%20result-11%20Dec%202026-orange)
+![Status](https://img.shields.io/badge/status-completed-brightgreen)
 
-A patient, rules-based BTC trading bot: it does nothing most of the time — and strikes only when price confirms a real dip. Built for a make.fun 24-hour trading-race bounty ($250 pool).
+A patient, rules-based BTC trading bot: it does nothing most of the time — and strikes only when price confirms a real dip. Built to compete in a 24-hour live trading race: enter rarely, protect capital first.
 
 ## 📊 Official dev grading
 
